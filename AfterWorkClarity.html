@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Make Sense of What Just Happened</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=YijupiM84FmDVEYQeAfuEEt-adYoQk1vhByYcatbcYDhBhw5ijF9Ah8RgDV1tzFa6v2RgysDpaUxzpIniIvJUIINE5jzLT5pf7mkYA37kG6s1FYzWXBN1hyj_3vtEbmr93HXhieIfGT_5DcMqSX6SPzFre-mdEU2RUnFf5rx51Jpen0dBzSBUPdDxiDZ7IPr6nh0lMKZkBKPmNUYxZ-v7eSPB7tUvV7y2132_ovKWo-BCfXdKL3yh-p235JJAjCG0Vw1P6ZeUrT2aSkeVhkUPHvMquuKDO262LzZkTDO8I0nDjM9SMO4DWO2d2XGjJE44gr3shq7n3zC9z_YT6kUIknE1nFOo_s6b10Qaaorlx2FB4-PfXumGrvy_XhtR5geTh63jFwSjHxgW3HYEmygOM0RMNkkNYfbP0i94fwQz-Ck78zCrXmkwNTVzbIpXa7p5N5xZbaaVoIA_PPIDWotx2AABT2xqV6p7MGDJqgbs_s2AdKwgChjIIa9AJy4Ggh0gCzSE_DHwX3IlKFVmxU1T5N_ERR9WL45WTnPQt3xjS1uJ9n48rxn2wuD2xt93T7-Y7UxmNcvMWWQ_GIY0g7w9wvaQwg9vpUQ17uL1QJdKHzeziCTm4gUHDqinNhnbsbZzTTN8eJHzMwNZaeUiujJgqcOUlFMBWpIfBUyP_oPlvnMPH0yDP3sPMOJhpgI9GsrJKeENqi4OwVZL9jxPREd44LPUqQMHai3rQPLw91c-K3pskmLFxm1yA2BLDMEK2gvQ4140-zs9r5darSMhBpN96guApCfb9nnFn887ZhoWhTieqlh6JrohATjTOxnJ0CnWUSt8Y-2ybeB3l6E8VIomRLCyw8GbwqmbldMddbRkH90Lry9qV7S3paR75M4htYb9Rlfx97ymQsrBwdRNgSeWJ083y_ehXf5SZG_AK9a4JsalyOpKBl28B45elgLYIT5pzb3K3gK3rEtaOink5FZQQg50iICE_G1FC0puUhkWr9CmM965YWQx9nvG7BKpwBFLVfmYf-lQYt82CPrJcgDdR_MmkQOHafW4B7NmNlSg-0sU3IkrV9a_rxx6X-CYAMt8PaoxFuSeve79nzRSAhimeZuJ9BUIdYb_nLoRiqZHWvJhUQrqje1KcdR6SagrLtZp6Csb5HVcLkXLudilyL3ioXR1_EpJ75N8w-w9nptd0QXt5k7Moqhh1_4dKfZ14oKoFtiX3MoKijYJXuDiq7kgKn_ai3Qcc1UF3D_gSD0lEF-GNtGv57CtXxiYiCaoYfFizpCepw8PUCcpvXXQVTn_szJpGPMJfJdtWoTfMaTVySfhL7mofO3322iiTnii2GjZ-Ui4-va2nZYyo8njw3LMg0PkNWen52NbgohnqoiMLvr74b6TGgS9NRpAmISWA14AnWcd7hRssXXPevk6xsDNWA3zaTVWuJoZ4vnEnSN0k0wu8G_KCwWRjByAfWEbhyOFxjRR-BTxLBS9fCWJlH9F3DDQNVV_DjHnvdeADTGizXXSlpQ7qvUuJ1lmWlFbfHmeG0_bxZOR3W5zSoBV1qsB8Ob5tf2wg-2zvqLmRPTWOoks8refdMkZPik3oaMwoVfYvM1tYgnsMDWfowUWMQeSsQIWtKGK2Shtd1LSNqCcBUT4uWW2GbBlIL8tgCmh1NMltoRmNIIQ8EfWX1x_1nX72nqfZdDxTPBgP7JVgHwkdWCNm6CBd_9cTFQMqg5vn8OMwlMRpOVbTKqbkhZgoY5Ns7go9XgZjqqjtsY1A2ztZ4" nonce="098f3789ff26f35d85c9a855b234f516" charset="UTF-8"></script><style>
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+:root {
+  --white: #ffffff;
+  --bg: #fafafa;
+  --ink: #111111;
+  --mid: #555555;
+  --light: #888888;
+  --faint: #eeeeee;
+  --border: #e0e0e0;
+  --accent: #111111;
+  --gold: #8b6914;
+  --green: #1a3d2e;
+  --sh: 0 1px 12px rgba(0,0,0,.06);
+  --sh2: 0 4px 24px rgba(0,0,0,.1);
+}
+
+html, body {
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ── SCREENS ── */
+.screen {
+  display: none;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 24px 72px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+.screen.active {
+  display: flex;
+  animation: fadeUp .38s cubic-bezier(.16,1,.3,1) both;
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── PROGRESS ── */
+.progress {
+  display: flex;
+  gap: 4px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.progress-dot {
+  flex: 1;
+  height: 2px;
+  background: var(--faint);
+  border-radius: 2px;
+  transition: background .3s;
+}
+.progress-dot.done { background: var(--ink); }
+.progress-dot.active { background: #999; }
+
+/* ── TYPOGRAPHY ── */
+.label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--light);
+  margin-bottom: 14px;
+  text-align: center;
+}
+.heading {
+  font-size: clamp(28px, 7vw, 42px);
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: -.02em;
+  color: var(--ink);
+  text-align: center;
+  margin-bottom: 16px;
+}
+.heading em { font-style: italic; color: var(--light); }
+.body-text {
+  font-size: 15px;
+  color: var(--mid);
+  line-height: 1.75;
+  text-align: center;
+  max-width: 380px;
+}
+.body-text strong { color: var(--ink); font-weight: 500; }
+
+/* ── BUTTONS ── */
+.btn {
+  display: block;
+  width: 100%;
+  padding: 15px 24px;
+  background: var(--ink);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: .02em;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity .15s, transform .12s;
+}
+.btn:hover { opacity: .85; }
+.btn:active { transform: scale(.98); }
+.btn-outline {
+  background: transparent;
+  color: var(--light);
+  border: 1.5px solid var(--border);
+}
+.btn-outline:hover { color: var(--mid); border-color: #ccc; }
+.btn-green {
+  background: var(--green);
+  color: #fff;
+}
+
+/* ── TEXTAREA ── */
+textarea {
+  width: 100%;
+  padding: 16px 18px;
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--ink);
+  line-height: 1.7;
+  resize: none;
+  outline: none;
+  min-height: 120px;
+  box-shadow: var(--sh);
+  transition: border-color .2s;
+}
+textarea:focus { border-color: var(--ink); }
+textarea::placeholder { color: #bbb; }
+
+/* ── OPTION CARDS ── */
+.options { display: flex; flex-direction: column; gap: 10px; width: 100%; }
+.option {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 18px;
+  cursor: pointer;
+  transition: all .17s;
+  box-shadow: var(--sh);
+  text-align: left;
+}
+.option:hover {
+  border-color: #bbb;
+  box-shadow: var(--sh2);
+  transform: translateY(-1px);
+}
+.option.selected {
+  border-color: var(--ink);
+  background: #f8f8f8;
+  box-shadow: var(--sh2);
+}
+.option-title { font-size: 15px; font-weight: 500; color: var(--ink); margin-bottom: 4px; }
+.option-sub { font-size: 13px; color: var(--mid); line-height: 1.5; }
+
+/* ── LOOP LINES ── */
+.loop-lines { width: 100%; display: flex; flex-direction: column; gap: 0; }
+.loop-line {
+  font-size: clamp(17px, 4.5vw, 24px);
+  font-weight: 300;
+  color: var(--ink);
+  padding: 14px 0;
+  border-bottom: 1px solid var(--faint);
+  letter-spacing: -.01em;
+  line-height: 1.3;
+  opacity: 0;
+  animation: fadeUp .4s forwards;
+}
+.loop-line:last-child { border-bottom: none; color: var(--mid); font-style: italic; }
+.loop-line:nth-child(1) { animation-delay: .05s; }
+.loop-line:nth-child(2) { animation-delay: .14s; }
+.loop-line:nth-child(3) { animation-delay: .23s; }
+.loop-line:nth-child(4) { animation-delay: .32s; }
+.loop-line:nth-child(5) { animation-delay: .46s; }
+
+/* ── PILLARS ── */
+.pillars { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; width: 100%; }
+.pillar {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 12px;
+  text-align: center;
+  box-shadow: var(--sh);
+}
+.pillar-icon { font-size: 20px; margin-bottom: 8px; }
+.pillar-label { font-size: 12px; color: var(--mid); line-height: 1.4; }
+.pillar-label strong { color: var(--ink); font-weight: 500; display: block; margin-top: 2px; }
+
+/* ── INSIGHT LINES ── */
+.insight-lines { width: 100%; display: flex; flex-direction: column; gap: 0; margin-bottom: 32px; }
+.insight-line {
+  font-size: clamp(17px, 4.2vw, 22px);
+  font-weight: 300;
+  color: var(--ink);
+  padding: 15px 0;
+  border-bottom: 1px solid var(--faint);
+  line-height: 1.35;
+  letter-spacing: -.01em;
+}
+.insight-line:last-child { border-bottom: none; font-weight: 500; }
+.insight-line.muted { color: var(--mid); }
+
+/* ── PATTERN GRID ── */
+.pattern-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; width: 100%; }
+.pattern-card {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  padding: 18px 16px;
+  box-shadow: var(--sh);
+  transition: all .35s cubic-bezier(.16,1,.3,1);
+  position: relative;
+  overflow: hidden;
+}
+.pattern-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  border-radius: 12px 12px 0 0;
+}
+.pc-tighten::before { background: #2c3d6b; }
+.pc-prove::before   { background: #7a2d1a; }
+.pc-adapt::before   { background: #1a3d2e; }
+.pc-diffuse::before { background: #8b6914; }
+
+.pattern-card.dimmed { opacity: .2; transform: scale(.94); }
+.pattern-card.highlighted {
+  border-color: var(--ink);
+  background: var(--ink);
+  box-shadow: 0 8px 32px rgba(0,0,0,.18);
+  transform: scale(1.04);
+  z-index: 2;
+}
+.pattern-card.highlighted::after {
+  content: 'YOU';
+  position: absolute;
+  top: 12px; right: 12px;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: .18em;
+  color: rgba(255,255,255,.3);
+}
+
+.pc-icon { font-size: 22px; margin-bottom: 10px; }
+.pc-name { font-size: 16px; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
+.pc-row { font-size: 11px; color: var(--mid); line-height: 1.5; margin-bottom: 3px; display: flex; gap: 5px; }
+.pc-row-lbl { font-weight: 600; color: var(--light); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; flex-shrink: 0; min-width: 32px; }
+.pc-shift { margin-top: 10px; padding-top: 9px; border-top: 1px solid var(--faint); font-size: 11px; color: var(--green); font-weight: 500; line-height: 1.5; }
+
+.pattern-card.highlighted .pc-name { color: #fff; }
+.pattern-card.highlighted .pc-row { color: rgba(255,255,255,.45); }
+.pattern-card.highlighted .pc-row-lbl { color: rgba(255,255,255,.28); }
+.pattern-card.highlighted .pc-shift { border-top-color: rgba(255,255,255,.1); color: rgba(255,255,255,.65); }
+
+/* INSIGHT BLOCK */
+.insight-block {
+  width: 100%;
+  background: var(--ink);
+  border-radius: 10px;
+  padding: 22px 20px;
+  margin-top: 4px;
+}
+.ib-label { font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.35); margin-bottom: 10px; }
+.ib-text { font-size: clamp(15px, 3.8vw, 18px); color: rgba(255,255,255,.88); line-height: 1.65; font-weight: 300; font-style: italic; }
+.ib-text em { font-style: normal; color: #e8b84b; }
+
+/* STRATEGY */
+.strategy-card {
+  width: 100%;
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--sh2);
+}
+.sc-head { padding: 20px 22px; background: var(--ink); }
+.sc-label { font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.35); margin-bottom: 8px; }
+.sc-title { font-size: clamp(16px, 4vw, 21px); font-weight: 300; font-style: italic; color: rgba(255,255,255,.9); line-height: 1.4; }
+.sc-body { padding: 18px 22px; }
+.sc-item { display: flex; gap: 12px; align-items: flex-start; padding: 11px 0; border-bottom: 1px solid var(--faint); }
+.sc-item:last-child { border-bottom: none; padding-bottom: 0; }
+.sc-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--ink); flex-shrink: 0; margin-top: 6px; }
+.sc-text { font-size: 14px; color: var(--mid); line-height: 1.6; }
+.sc-text strong { color: var(--ink); font-weight: 500; }
+
+/* GPT SECTION */
+.gpt-block {
+  width: 100%;
+  border: 1.5px solid var(--border);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--sh2);
+}
+.gpt-top {
+  background: var(--ink);
+  padding: 28px 24px 24px;
+}
+.gpt-top-label { font-size: 10px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.3); margin-bottom: 12px; }
+.gpt-top-title { font-size: clamp(22px, 5.5vw, 30px); font-weight: 300; color: #fff; line-height: 1.2; letter-spacing: -.01em; margin-bottom: 6px; }
+.gpt-top-title em { font-style: italic; color: rgba(255,255,255,.45); font-size: .85em; }
+.gpt-bottom { padding: 22px 24px; background: #f5f5f5; }
+.gpt-lines { display: flex; flex-direction: column; gap: 10px; margin-bottom: 22px; }
+.gpt-line { display: flex; gap: 10px; align-items: flex-start; }
+.gpt-line-dash { color: #aaa; font-size: 13px; flex-shrink: 0; margin-top: 1px; }
+.gpt-line-text { font-size: 14px; color: var(--mid); line-height: 1.6; }
+.gpt-line-text strong { color: var(--ink); font-weight: 500; }
+.gpt-warning {
+  background: #fff8e7;
+  border: 1px solid #f0d88a;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  font-size: 13px;
+  color: #7a5800;
+  line-height: 1.6;
+}
+.gpt-warning strong { font-weight: 600; }
+.gpt-btn {
+  display: block;
+  width: 100%;
+  padding: 16px 24px;
+  background: var(--ink);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .01em;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: opacity .15s, transform .12s;
+  margin-bottom: 10px;
+}
+.gpt-btn:hover { opacity: .85; }
+.gpt-btn:active { transform: scale(.98); }
+.gpt-note { text-align: center; font-size: 12px; color: var(--light); line-height: 1.6; }
+
+/* CLOSE LINES */
+.close-lines { width: 100%; display: flex; flex-direction: column; gap: 0; }
+.close-line {
+  font-size: clamp(18px, 4.5vw, 26px);
+  font-weight: 300;
+  color: var(--mid);
+  padding: 15px 0;
+  border-bottom: 1px solid var(--faint);
+  line-height: 1.25;
+  letter-spacing: -.01em;
+}
+.close-line.strong { color: var(--ink); font-weight: 500; }
+.close-line:last-child { border-bottom: none; font-style: italic; }
+
+/* SPACING */
+.sp { flex: 1; }
+.g8  { height: 8px; }
+.g12 { height: 12px; }
+.g16 { height: 16px; }
+.g20 { height: 20px; }
+.g28 { height: 28px; }
+.g36 { height: 36px; }
+
+@media (max-width: 400px) {
+  .pillars { grid-template-columns: 1fr; }
+  .pattern-grid { grid-template-columns: 1fr; }
+  .pattern-card.highlighted { transform: scale(1.01); }
+  .pattern-card.dimmed { transform: scale(.97); }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ S0 HOOK ═══ -->
+<div class="screen active" id="s0">
+  <div class="sp"></div>
+  <p class="label">Make Sense of What Just Happened</p>
+  <h1 class="heading" style="font-size:clamp(32px,8vw,50px)">Still thinking<br>about what<br>happened?</h1>
+  <div class="g16"></div>
+  <p class="body-text" style="margin-bottom:44px">If something from today is still on your mind — <strong>this will help you understand it.</strong> Not explain it away. Understand it.</p>
+  <div class="sp"></div>
+  <button class="btn" onclick="go(1)">Start →</button>
+  <div class="g12"></div>
+  <p style="text-align:center;font-size:12px;color:#bbb;letter-spacing:.04em">4 minutes · Free · Nothing stored</p>
+</div>
+
+<!-- ═══ S1 SITUATION ═══ -->
+<div class="screen" id="s1">
+  <div class="progress" id="pg1"></div>
+  <h2 class="heading">What happened?</h2>
+  <p class="body-text" style="margin-bottom:24px">Think of one moment that stayed with you. Write briefly.</p>
+  <textarea id="situation" placeholder="Something happened at work, at home, with someone…" rows="4"></textarea>
+  <div class="g20"></div>
+  <button class="btn" onclick="go(2)">Next →</button>
+</div>
+
+<!-- ═══ S2 VALIDATION ═══ -->
+<div class="screen" id="s2">
+  <div class="progress" id="pg2"></div>
+  <h2 class="heading" style="font-size:clamp(22px,5.5vw,32px)">This usually isn't just<br>about the situation.</h2>
+  <div class="g16"></div>
+  <p class="body-text" style="margin-bottom:28px">It affects three things at once. That's why it stays with you.</p>
+  <div class="pillars">
+    <div class="pillar"><div class="pillar-icon">⚖️</div><div class="pillar-label">Your sense of<strong>control</strong></div></div>
+    <div class="pillar"><div class="pillar-icon">🤝</div><div class="pillar-label">Your<strong>relationships</strong></div></div>
+    <div class="pillar"><div class="pillar-icon">📈</div><div class="pillar-label">Your sense of<strong>progress</strong></div></div>
+  </div>
+  <div class="g28"></div>
+  <button class="btn" onclick="go(3)">I recognise that →</button>
+</div>
+
+<!-- ═══ S3 REACTION ═══ -->
+<div class="screen" id="s3">
+  <div class="progress" id="pg3"></div>
+  <h2 class="heading" style="font-size:clamp(22px,5.5vw,32px)">What did you start<br>doing after?</h2>
+  <div class="g8"></div>
+  <p class="body-text" style="margin-bottom:22px">Your instinctive response — not what you intended.</p>
+  <div class="options">
+    <div class="option" onclick="pick(this,'reaction','control')">
+      <div class="option-title">I tried to take control or protect my position</div>
+      <div class="option-sub">Explaining more, correcting, tightening up, being more careful</div>
+    </div>
+    <div class="option" onclick="pick(this,'reaction','approval')">
+      <div class="option-title">I tried to stay agreeable or avoid conflict</div>
+      <div class="option-sub">Holding back, adjusting my tone, letting things pass, going quiet</div>
+    </div>
+    <div class="option" onclick="pick(this,'reaction','prove')">
+      <div class="option-title">I tried to prove myself through work</div>
+      <div class="option-sub">Working more, overthinking, trying to get everything right</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ S4 LOOP BUILD ═══ -->
+<div class="screen" id="s4">
+  <div class="progress" id="pg4"></div>
+  <div class="sp"></div>
+  <h2 class="heading" style="font-style:italic">It works…<br>for a while.</h2>
+  <div class="g16"></div>
+  <p class="body-text" style="margin-bottom:44px">But then something familiar happens.</p>
+  <div class="sp"></div>
+  <button class="btn" onclick="go(5)">Show me →</button>
+</div>
+
+<!-- ═══ S5 LOOP LINES ═══ -->
+<div class="screen" id="s5">
+  <div class="progress" id="pg5"></div>
+  <div class="loop-lines">
+    <div class="loop-line">You think about it later.</div>
+    <div class="loop-line">You replay the conversation.</div>
+    <div class="loop-line">You imagine what you should have said.</div>
+    <div class="loop-line">You tell yourself you'll handle it better next time.</div>
+    <div class="loop-line">And then… it happens again.</div>
+  </div>
+  <div class="g28"></div>
+  <button class="btn" onclick="go(6)">Continue →</button>
+</div>
+
+<!-- ═══ S6 COPING ═══ -->
+<div class="screen" id="s6">
+  <div class="progress" id="pg6"></div>
+  <div class="sp"></div>
+  <h2 class="heading">So you try<br>to switch off.</h2>
+  <div class="g20"></div>
+  <div style="width:100%;margin-bottom:36px">
+    <p style="font-size:16px;color:var(--mid);padding:14px 0;border-bottom:1px solid var(--faint)">You distract yourself.</p>
+    <p style="font-size:16px;color:var(--mid);padding:14px 0;border-bottom:1px solid var(--faint)">Scroll. Watch. Eat. Work. Avoid.</p>
+    <p style="font-size:16px;color:var(--ink);padding:14px 0;font-weight:500">Anything to stop thinking about it.</p>
+  </div>
+  <div class="sp"></div>
+  <button class="btn" onclick="go(7)">Next →</button>
+</div>
+
+<!-- ═══ S7 TRUTH ═══ -->
+<div class="screen" id="s7">
+  <div class="progress" id="pg7"></div>
+  <div class="sp"></div>
+  <h2 class="heading" style="font-size:clamp(24px,6vw,36px)">This is the part<br>most people miss.</h2>
+  <div class="g20"></div>
+  <div style="width:100%;margin-bottom:36px">
+    <p style="font-size:15px;color:var(--mid);padding:14px 0;border-bottom:1px solid var(--faint)">This pattern isn't random.</p>
+    <p style="font-size:15px;color:var(--mid);padding:14px 0;border-bottom:1px solid var(--faint)">It's not just about this person.</p>
+    <p style="font-size:15px;color:var(--ink);padding:14px 0;font-weight:500">It's something your system already knows how to do.</p>
+  </div>
+  <div class="sp"></div>
+  <button class="btn" onclick="go(8)">What do you mean? →</button>
+</div>
+
+<!-- ═══ S8 CORE NEED ═══ -->
+<div class="screen" id="s8">
+  <div class="progress" id="pg8"></div>
+  <h2 class="heading" style="font-size:clamp(22px,5.5vw,32px)">What was at stake<br>for you?</h2>
+  <div class="g8"></div>
+  <p class="body-text" style="margin-bottom:22px">Underneath the situation — what did it actually touch?</p>
+  <div class="options">
+    <div class="option" onclick="pick(this,'need','control')">
+      <div class="option-title">I felt like I was losing control</div>
+      <div class="option-sub">Safety, certainty, authority — something felt out of my hands</div>
+    </div>
+    <div class="option" onclick="pick(this,'need','affiliation')">
+      <div class="option-title">I felt pushed away or not valued</div>
+      <div class="option-sub">Respect, connection, belonging — I felt dismissed or unseen</div>
+    </div>
+    <div class="option" onclick="pick(this,'need','achievement')">
+      <div class="option-title">I felt like I wasn't progressing</div>
+      <div class="option-sub">Achievement, recognition, worth — I felt exposed or inadequate</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ S9 INSIGHT TEXT ═══ -->
+<div class="screen" id="s9">
+  <div class="progress" id="pg9"></div>
+  <div class="sp"></div>
+  <div class="insight-lines">
+    <div class="insight-line">That's the real trigger.</div>
+    <div class="insight-line muted">Not just the situation — but what it <em>touched.</em></div>
+    <div class="insight-line muted">And the way you handled it…</div>
+    <div class="insight-line">is a pattern you've likely used before.</div>
+  </div>
+  <div class="sp"></div>
+  <button class="btn" onclick="go(10)">See my pattern →</button>
+</div>
+
+<!-- ═══ S10 PATTERN MAP ═══ -->
+<div class="screen" id="s10">
+  <div class="progress" id="pg10"></div>
+  <p class="label">The Pressure Pattern Map</p>
+  <h2 class="heading" style="font-size:clamp(20px,5vw,30px);margin-bottom:8px">Four responses to pressure.<br><em>One of them is yours.</em></h2>
+  <p class="body-text" style="font-size:13px;margin-bottom:16px">Highlighted below.</p>
+
+  <div class="pattern-grid">
+    <div class="pattern-card pc-tighten" id="pc-tighten">
+      <div class="pc-icon">🔒</div>
+      <div class="pc-name">Tighten</div>
+      <div class="pc-row"><span class="pc-row-lbl">Looks</span><span>Double-checking, controlling, over-preparing</span></div>
+      <div class="pc-row"><span class="pc-row-lbl">Needs</span><span>Safety, certainty</span></div>
+      <div class="pc-row"><span class="pc-row-lbl">Leads</span><span>Tension, isolation</span></div>
+      <div class="pc-shift">→ Loosen one thing deliberately</div>
+    </div>
+    <div class="pattern-card pc-prove" id="pc-prove">
+      <div class="pc-icon">🔥</div>
+      <div class="pc-name">Prove</div>
+      <div class="pc-row"><span class="pc-row-lbl">Looks</span><span>Overworking, over-explaining</span></div>
+      <div class="pc-row"><span class="pc-row-lbl">Needs</span><span>Recognition, progress</span></div>
+      <div class="pc-row"><span class="pc-row-lbl">Leads</span><span>Burnout, frustration</span></div>
+      <div class="pc-shift">→ Do less, with more clarity</div>
+    </div>
+    <div class="pattern-card pc-adapt" id="pc-adapt">
+      <div class="pc-icon">🤝</div>
+      <div class="pc-name">Adapt</div>
+      <div class="pc-row"><span class="pc-row-lbl">Looks</span><span>Agreeing, avoiding, going quiet</span></div>
+      <div class="pc-row"><span class="pc-row-lbl">Needs</span><span>Acceptance, belonging</span></div>
+      <div class="pc-row"><span class="pc-row-lbl">Leads</span><span>Resentment, invisibility</span></div>
+      <div class="pc-shift">→ Say one honest thing</div>
+    </div>
+    <div class="pattern-card pc-diffuse" id="pc-diffuse">
+      <div class="pc-icon">🌫️</div>
+      <div class="pc-name">Diffuse</div>
+      <div class="pc-row"><span class="pc-row-lbl">Looks</span><span>Distraction, avoidance, numbing</span></div>
+      <div class="pc-row"><span class="pc-row-lbl">Needs</span><span>Relief, ease</span></div>
+      <div class="pc-row"><span class="pc-row-lbl">Leads</span><span>Loop repeats unchanged</span></div>
+      <div class="pc-shift">→ Stay slightly longer next time</div>
+    </div>
+  </div>
+
+  <div class="g12"></div>
+  <div class="insight-block">
+    <p class="ib-label">Your insight</p>
+    <p class="ib-text" id="insight-text">Calculating…</p>
+  </div>
+  <div class="g20"></div>
+  <button class="btn" onclick="go(11)">See the strategy →</button>
+</div>
+
+<!-- ═══ S11 STRATEGY ═══ -->
+<div class="screen" id="s11">
+  <div class="progress" id="pg11"></div>
+  <p class="label" style="margin-bottom:8px">Your Strategy</p>
+  <h2 class="heading" style="font-size:clamp(20px,5vw,28px);margin-bottom:20px">What will actually<br>move this forward.</h2>
+  <div class="strategy-card" id="strategy-card"></div>
+  <div class="g20"></div>
+  <button class="btn" onclick="go(12)">Continue →</button>
+</div>
+
+<!-- ═══ S12 TRANSITION TO GPT ═══ -->
+<div class="screen" id="s12">
+  <div class="progress" id="pg12"></div>
+  <div class="sp"></div>
+  <div class="close-lines" style="margin-bottom:36px">
+    <div class="close-line">You've seen the pattern.</div>
+    <div class="close-line">But the situation still needs to be handled.</div>
+    <div class="close-line" style="color:var(--light)">Most people stop at awareness.</div>
+    <div class="close-line strong">The difference comes from how you think through it.</div>
+    <div class="close-line" style="color:var(--light);font-size:clamp(15px,3.8vw,20px)">If nothing changes, this situation will repeat — just with different people.</div>
+  </div>
+  <div class="sp"></div>
+
+  <div class="gpt-block">
+    <div class="gpt-top">
+      <p class="gpt-top-label">Next Step</p>
+      <p class="gpt-top-title">Work through this<br><em>properly.</em></p>
+    </div>
+    <div class="gpt-bottom">
+      <div class="gpt-lines">
+        <div class="gpt-line"><span class="gpt-line-dash">—</span><span class="gpt-line-text">Not a chatbot. A <strong>thinking partner</strong> that asks you the right questions.</span></div>
+        <div class="gpt-line"><span class="gpt-line-dash">—</span><span class="gpt-line-text">Tell it what happened. It helps you <strong>see what you're avoiding.</strong></span></div>
+        <div class="gpt-line"><span class="gpt-line-dash">—</span><span class="gpt-line-text">You leave with <strong>one clear move</strong> — specific to your situation.</span></div>
+      </div>
+      <div class="gpt-warning">
+        <strong>You'll need a ChatGPT account</strong> — free to create at chatgpt.com if you don't have one yet.
+      </div>
+      <a
+        href="https://chatgpt.com/g/g-69e75a4ee98881919d131d0014bdea08-file-insight-assistant"
+        target="_blank"
+        class="gpt-btn"
+        id="gpt-btn"
+      >Work through this situation →</a>
+      <p class="gpt-note">Use this when you want to think through your situation step by step.</p>
+    </div>
+  </div>
+
+  <div class="g20"></div>
+  <button class="btn btn-outline" onclick="restart()">Start again</button>
+</div>
+
+<script>
+// ── STATE ──
+const ST = { situation:'', reaction:'', need:'', pattern:'' };
+const TOTAL = 13;
+
+// ── PATTERN LOGIC ──
+function calcPattern() {
+  const r = ST.reaction, n = ST.need;
+  if (r==='control'  && n==='control')     return 'tighten';
+  if (r==='control'  && n==='achievement') return 'prove';
+  if (r==='control'  && n==='affiliation') return 'tighten';
+  if (r==='approval' && n==='affiliation') return 'adapt';
+  if (r==='approval' && n==='control')     return 'tighten';
+  if (r==='approval' && n==='achievement') return 'adapt';
+  if (r==='prove'    && n==='achievement') return 'prove';
+  if (r==='prove'    && n==='affiliation') return 'adapt';
+  if (r==='prove'    && n==='control')     return 'prove';
+  return 'diffuse';
+}
+
+// ── DATA ──
+const INSIGHTS = {
+  tighten: "You're trying to <em>control a situation where control is limited.</em> Every tighten signals anxiety — and costs you trust you can't see leaving.",
+  prove:   "You're <em>investing effort without increasing influence.</em> The work is real. It's landing in the wrong place.",
+  adapt:   "You're <em>protecting the relationship at the cost of your own clarity.</em> The accommodation earns tolerance, not respect.",
+  diffuse: "You're <em>stepping away from the moment that actually matters.</em> The situation stays unchanged, waiting for next time."
+};
+
+const STRATEGIES = {
+  tighten: {
+    diag: 'You are trying to control a situation where control is limited.',
+    items: [
+      { t:'Reduce friction — don\'t add control.', b:'Every tighten signals anxiety. Loosening one thing deliberately shifts the dynamic more than any control move.' },
+      { t:'Focus on visibility, not perfection.', b:'The work doesn\'t need to be flawless. It needs to be seen by the right person at the right moment.' },
+      { t:'Stop over-managing the details.', b:'The details are not where this will be decided. Relationship, timing, positioning — that\'s where outcomes are made.' }
+    ]
+  },
+  prove: {
+    diag: 'You are investing effort without increasing influence.',
+    items: [
+      { t:'Shift from output to positioning.', b:'More work is not more influence. Ask: who needs to see this, and how will they interpret it?' },
+      { t:'Make your work visible in the right places.', b:'The person you\'re working for may not be the person who matters most here.' },
+      { t:'Stop over-explaining.', b:'Every additional explanation signals doubt. Say it once, clearly, then stop.' }
+    ]
+  },
+  adapt: {
+    diag: 'You are protecting relationships at the cost of clarity.',
+    items: [
+      { t:'Introduce controlled honesty.', b:'You don\'t need to say everything. You need to say one real thing — clearly, without apology.' },
+      { t:'Express disagreement without drama.', b:'"I see it differently" is a complete sentence. Name the disagreement and let it stand.' },
+      { t:'Stop over-adjusting.', b:'Each accommodation teaches people what works on you. One moment of not adjusting resets the expectation.' }
+    ]
+  },
+  diffuse: {
+    diag: 'You are stepping away instead of shaping the situation.',
+    items: [
+      { t:'Stay engaged in the key moments.', b:'The moments you step away from are usually the ones that matter. Absence removes all your options.' },
+      { t:'Don\'t avoid tension — navigate it.', b:'Tension is information. Staying and asking one question moves more than any avoidance strategy.' },
+      { t:'Create one small point of influence.', b:'A question, a contribution, a position — one consistent act of engagement builds credibility over time.' }
+    ]
+  }
+};
+
+// ── NAVIGATION ──
+function go(n) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById('s'+n).classList.add('active');
+  window.scrollTo(0,0);
+  updateProgress(n);
+  if (n === 10) renderPattern();
+  if (n === 11) renderStrategy();
+  if (n === 12) renderGPTButton();
+}
+
+function updateProgress(cur) {
+  for (let i=1; i<=TOTAL; i++) {
+    const el = document.getElementById('pg'+i);
+    if (!el) continue;
+    el.innerHTML = '';
+    for (let j=1; j<=TOTAL; j++) {
+      const d = document.createElement('div');
+      d.className = 'progress-dot' + (j < cur ? ' done' : j === cur ? ' active' : '');
+      el.appendChild(d);
+    }
+  }
+}
+
+function pick(el, key, val) {
+  el.closest('.options').querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
+  el.classList.add('selected');
+  ST[key] = val;
+  if (key === 'reaction' || key === 'need') ST.pattern = calcPattern();
+  const cur = parseInt(el.closest('.screen').id.replace('s',''));
+  setTimeout(() => go(cur + 1), 220);
+}
+
+// ── RENDER PATTERN ──
+function renderPattern() {
+  ST.pattern = calcPattern();
+  const p = ST.pattern;
+  ['tighten','prove','adapt','diffuse'].forEach(k => {
+    const el = document.getElementById('pc-'+k);
+    el.classList.remove('highlighted','dimmed');
+    el.classList.add(k === p ? 'highlighted' : 'dimmed');
+  });
+  document.getElementById('insight-text').innerHTML = INSIGHTS[p];
+}
+
+// ── RENDER STRATEGY ──
+function renderStrategy() {
+  const s = STRATEGIES[ST.pattern] || STRATEGIES.diffuse;
+  const items = s.items.map(i => `
+    <div class="sc-item">
+      <div class="sc-dot"></div>
+      <div class="sc-text"><strong>${i.t}</strong> ${i.b}</div>
+    </div>`).join('');
+  document.getElementById('strategy-card').innerHTML = `
+    <div class="sc-head">
+      <p class="sc-label">For ${(ST.pattern||'your').charAt(0).toUpperCase()+(ST.pattern||'').slice(1)} pattern</p>
+      <p class="sc-title">${s.diag}</p>
+    </div>
+    <div class="sc-body">${items}</div>`;
+}
+
+// ── GPT BUTTON — personalise with pattern ──
+function renderGPTButton() {
+  const p = ST.pattern;
+  const labels = {
+    tighten: 'Think through my situation — I\'m in Tighten →',
+    prove:   'Think through my situation — I\'m in Prove →',
+    adapt:   'Think through my situation — I\'m in Adapt →',
+    diffuse: 'Think through my situation — I\'m in Diffuse →'
+  };
+  const btn = document.getElementById('gpt-btn');
+  if (p && labels[p]) btn.textContent = labels[p];
+}
+
+function restart() {
+  ST.situation = ''; ST.reaction = ''; ST.need = ''; ST.pattern = '';
+  document.getElementById('situation').value = '';
+  document.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
+  go(0);
+}
+
+// Store situation
+document.getElementById('situation').addEventListener('blur', function() {
+  ST.situation = this.value.trim();
+});
+
+updateProgress(1);
+</script>
+</body>
+</html>
